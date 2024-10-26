@@ -1,0 +1,85 @@
+/* App.css */
+
+/* Body */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #f1f1f1; /* Light text color */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  color: #d50000; /* Red color for header */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Search Bar and Filters */
+input[type="text"],
+input[type="number"] {
+  width: 300px;
+  padding: 10px;
+  margin: 10px auto;
+  border: 2px solid #d50000; /* Red border */
+  border-radius: 5px;
+  background-color: #333; /* Dark background for inputs */
+  color: #f1f1f1; /* Light text color */
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #ff9800; /* Orange border on focus */
+  outline: none;
+}
+
+/* Summary Stats */
+h2 {
+  text-align: center;
+  color: #ff9800; /* Orange for stats */
+}
+
+/* Character List */
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the list */
+}
+
+li {
+  background-color: #1f1f1f; /* Dark card background */
+  border: 2px solid #d50000; /* Red border */
+  border-radius: 10px;
+  margin: 10px;
+  padding: 15px;
+  width: 200px; /* Fixed width for character cards */
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+li:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Character Image */
+img {
+  max-width: 100%;
+  border-radius: 5px; /* Slightly round the image corners */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  input[type="text"],
+  input[type="number"] {
+    width: 90%; /* Make inputs responsive */
+  }
+
+  li {
+    width: 90%; /* Make cards responsive */
+  }
+}
